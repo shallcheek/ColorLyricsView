@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//添加
+publish {
+    userOrg = 'shallcheek'
+    groupId = 'com.chaek.android'//jcenter上的路径
+    artifactId = 'colorlyricsview'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'colorlyricsview'//描述，不重要
+    website = 'https://github.com/shallcheek'
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
