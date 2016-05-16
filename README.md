@@ -2,8 +2,6 @@
 ColorLyricsView
 ##Demo
  
-<table>
-<tr>
 name | format 
 --- | ---   
 <img src="./img/left.png" width="50%"><img>
