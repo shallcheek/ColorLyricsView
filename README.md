@@ -2,8 +2,15 @@
 ColorLyricsView
 ##Demo
  
-![](./img/left.png) <img src="" width="50%"><img>
-![](./img/top.png) <img src="" width="50%"><img>
+<table>
+<tr>
+<img src="./img/left.png" width="40%"><img>
+</tr>
+<tr  width="10%"/>
+<tr>
+<img src="./img/top.png" width="40%"><img>
+</tr>
+</table>
  
 ##XML
 ```xml
