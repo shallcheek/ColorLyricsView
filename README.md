@@ -1,16 +1,14 @@
 # ColorLyricsView
 ColorLyricsView
 ##Demo
-<tale>
-<td>
+ 
 <table>
 <tr>
+name | format 
+--- | ---   
 <img src="./img/left.png" width="50%"><img>
-</tr>
-<tr>
-<img src="./img/top.png" width="50%"><img>
-</tr>
-</table>
+ |<img src="./img/top.png" width="50%"><img>
+ 
  
 ##XML
 ```xml
