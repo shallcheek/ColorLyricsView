@@ -1,14 +1,6 @@
 # ColorLyricsView
 ColorLyricsView
-##Demo
- 
-###LEFT
-<img src="./img/left.png" width="40%"><img>
- 
-###TOP
-<img src="./img/top.png" width="40%"><img>
- 
- 
+
 ##XML
 ```xml
     <com.chaek.android.ColorLyricsView
@@ -41,4 +33,12 @@ progressColor     | color\|reference    | progress color| public void setProgres
 maxProgress     | integer    | max Progress |none
 progress     | integer    | progress|public void setProgress(int mProgress) 
 type     | enum    | TOP or LEFT or RIGHT or BOTTOM| public void setDirectionType(int direction)
-
+##Demo
+ 
+###LEFT
+<img src="./img/left.png" width="40%"><img>
+ 
+###TOP
+<img src="./img/top.png" width="40%"><img>
+ 
+ 
