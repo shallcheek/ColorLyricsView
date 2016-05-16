@@ -2,10 +2,10 @@
 ColorLyricsView
 ##Demo
  
- 
+ ###LEFT
 <img src="./img/left.png" width="40%"><img>
  
- 
+ ###TOP
 <img src="./img/top.png" width="40%"><img>
  
  
