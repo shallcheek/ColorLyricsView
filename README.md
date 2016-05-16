@@ -1,8 +1,17 @@
 # ColorLyricsView
 ColorLyricsView
 ##Demo
-![](/img/left.png =100x200)
-
+<tale>
+<td>
+<table>
+<tr>
+<img src="https://github.com/shallcheek/ColorLyricsView/img/left.png" width="50%"><img>
+</tr>
+<tr>
+<img src="https://github.com/shallcheek/ColorLyricsView/img/top.png" width="50%"><img>
+</tr>
+</table>
+ 
 ##XML
 ```xml
     <com.chaek.android.ColorLyricsView
