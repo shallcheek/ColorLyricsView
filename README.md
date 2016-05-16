@@ -2,11 +2,8 @@
 ColorLyricsView
 ##Demo
  
-name | format 
---- | ---   
-<img src="./img/left.png" width="50%"><img>
- |<img src="./img/top.png" width="50%"><img>
- 
+![](./img/left.png) <img src="" width="50%"><img>
+![](./img/top.png) <img src="" width="50%"><img>
  
 ##XML
 ```xml
