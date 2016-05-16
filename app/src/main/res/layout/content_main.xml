@@ -14,7 +14,7 @@
         android:id="@+id/a"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        app:progressColor="#54f5f0"
+        app:progressColor="#ce4334"
         app:txtColor="#5e5050"
         app:txtSize="20sp"
         app:maxProgress="100"

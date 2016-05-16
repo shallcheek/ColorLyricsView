@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final RadioButton r3 = (RadioButton) findViewById(R.id.radioButton3);
         final RadioButton r4 = (RadioButton) findViewById(R.id.radioButton4);
         final ColorLyricsView colorLoadingTextView = (ColorLyricsView) findViewById(R.id.a);
-        colorLoadingTextView.setText("测试测试测试测试测试");
+        colorLoadingTextView.setText("This is ColorLyricsView");
         if (group != null) {
             group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
                 @Override
