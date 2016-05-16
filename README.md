@@ -5,10 +5,10 @@ ColorLyricsView
 <td>
 <table>
 <tr>
-<img src="https://github.com/shallcheek/ColorLyricsView/img/left.png" width="50%"><img>
+<img src="https://github.com/shallcheek/ColorLyricsView/tree/master/img/left.png" width="50%"><img>
 </tr>
 <tr>
-<img src="https://github.com/shallcheek/ColorLyricsView/img/top.png" width="50%"><img>
+<img src="https://github.com/shallcheek/ColorLyricsView/tree/master/img/top.png" width="50%"><img>
 </tr>
 </table>
  
