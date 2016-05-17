@@ -5,7 +5,7 @@
         <attr name="txtColor" format="color|reference" />
         <attr name="progressColor" format="color|reference" />
         <attr name="maxProgress" format="integer" />
-        <attr name="progress" format="integer" />
+        <attr name="viewProgress" format="integer" />
         <attr name="type" format="enum">
             <enum name="LEFT" value="1" />
             <enum name="TOP" value="2" />

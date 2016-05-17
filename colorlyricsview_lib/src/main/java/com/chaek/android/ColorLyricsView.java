@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Paint.FontMetricsInt;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -30,7 +31,8 @@ public class ColorLyricsView extends View {
     private int centerX;
     private int textCenterY = 47;
     private int textSize = 24;
-    private String text = "12";
+    private String text;
+    private Rect mTextBound = new Rect();
 
     private PorterDuffXfermode porterDuffXfermode;
     private Paint textPaint;
@@ -56,7 +58,7 @@ public class ColorLyricsView extends View {
         textColor = a.getColor(R.styleable.ColorLyricsView_txtColor, textColor);
         progressColor = a.getColor(R.styleable.ColorLyricsView_progressColor, progressColor);
         textSize = a.getDimensionPixelSize(R.styleable.ColorLyricsView_txtSize, textSize);
-        mProgress = a.getInteger(R.styleable.ColorLyricsView_progress, 0);
+        mProgress = a.getInteger(R.styleable.ColorLyricsView_viewProgress, 0);
         mMaxProgress = a.getInteger(R.styleable.ColorLyricsView_maxProgress, 100);
         mDirection = a.getInt(R.styleable.ColorLyricsView_type, 0);
         a.recycle();
@@ -72,6 +74,11 @@ public class ColorLyricsView extends View {
             textWidth = (int) textPaint.measureText(text);
         }
         textHeight = textSize;
+        textHeight = (int) Math.ceil(fontMetrics.descent - fontMetrics.top);
+//        if (null != text) {
+//            textPaint.getTextBounds(text, 0, text.length(), mTextBound);
+//            textHeight = mTextBound.height();
+//        }
         startX = getWidth() / 2 - textWidth / 2;
         centerY = (bottom - top) / 2;
         rectFront.left = startX;
@@ -132,6 +139,12 @@ public class ColorLyricsView extends View {
     }
 
 
+    public void setMaxProgress(int mMaxProgress) {
+        this.mMaxProgress = mMaxProgress;
+        requestLayout();
+        invalidate();
+    }
+
     public void setTextSize(int textSize) {
         this.textSize = spToPx(textSize);
         if (textPaint != null) {
@@ -157,6 +170,7 @@ public class ColorLyricsView extends View {
             canvas.drawText(text, centerX, textCenterY, textPaint);
 
         textPaint.setXfermode(porterDuffXfermode);
+
         textPaint.setColor(progressColor);
         canvas.drawRect(rectFront, textPaint);
 
