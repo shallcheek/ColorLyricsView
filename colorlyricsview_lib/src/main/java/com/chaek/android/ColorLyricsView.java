@@ -75,10 +75,6 @@ public class ColorLyricsView extends View {
         }
         textHeight = textSize;
         textHeight = (int) Math.ceil(fontMetrics.descent - fontMetrics.top);
-//        if (null != text) {
-//            textPaint.getTextBounds(text, 0, text.length(), mTextBound);
-//            textHeight = mTextBound.height();
-//        }
         startX = getWidth() / 2 - textWidth / 2;
         centerY = (bottom - top) / 2;
         rectFront.left = startX;
