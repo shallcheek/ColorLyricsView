@@ -6,7 +6,7 @@ ColorLyricsView
 ##Gradle
 ```java
 dependencies{
-    compile 'com.chaek.android:colorlyricsview:1.0.5'
+    compile 'com.chaek.android:colorlyricsview:1.1.0'
 }
 ```
 

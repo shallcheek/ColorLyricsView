@@ -17,15 +17,7 @@ android {
         }
     }
 }
-//添加
-publish {
-    userOrg = 'shallcheek'
-    groupId = 'com.chaek.android'
-    artifactId = 'colorlyricsview'
-    publishVersion = '1.0.5'
-    desc = 'colorlyricsview'
-    website = 'https://github.com/shallcheek/ColorLyricsView'
-}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
