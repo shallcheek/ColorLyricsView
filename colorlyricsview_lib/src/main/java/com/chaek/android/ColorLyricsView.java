@@ -7,7 +7,6 @@ import android.graphics.Paint;
 import android.graphics.Paint.FontMetricsInt;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
-import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -32,8 +31,6 @@ public class ColorLyricsView extends View {
     private int textCenterY = 47;
     private int textSize = 24;
     private String text;
-    private Rect mTextBound = new Rect();
-
     private PorterDuffXfermode porterDuffXfermode;
     private Paint textPaint;
     private RectF rectFront;
@@ -157,23 +154,18 @@ public class ColorLyricsView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //save
-        int sc = canvas.saveLayer(0, 0, getWidth(), getHeight(), null, Canvas.ALL_SAVE_FLAG);
+        int saveLayerCount = canvas.saveLayer(0, 0, getWidth(), getHeight(), textPaint, Canvas.ALL_SAVE_FLAG);
         setDirection(mDirection);
-
         textPaint.setColor(textColor);
         if (null != text)
             canvas.drawText(text, centerX, textCenterY, textPaint);
-
         textPaint.setXfermode(porterDuffXfermode);
-
         textPaint.setColor(progressColor);
         canvas.drawRect(rectFront, textPaint);
-
         // clear Xfermode
         textPaint.setXfermode(null);
         // restore
-        canvas.restoreToCount(sc);
+        canvas.restoreToCount(saveLayerCount);
     }
 
 

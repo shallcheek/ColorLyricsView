@@ -17,8 +17,8 @@
         app:txtColor="#5e5050"
         app:txtSize="20sp"
         app:maxProgress="100"
-        app:viewProgress="20"
-        app:type="TOP"
+        app:viewProgress="50"
+        app:type="LEFT"
         />
 
     <SeekBar
